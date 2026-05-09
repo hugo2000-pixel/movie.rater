@@ -271,6 +271,38 @@ body {
     opacity: 0.5;
 }
 
+.movie-genre {
+    font-size: 0.85rem;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.movie-plot {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #cbd5e1;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.movie-crew {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.crew-item strong {
+    color: #f8fafc;
+    font-weight: 600;
+}
+
 .sources-breakdown {
     margin-top: auto;
     padding-top: 1rem;

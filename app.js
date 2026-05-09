@@ -166,7 +166,18 @@ function createMovieCard(movie) {
                 <span>${movie.Year}</span>
                 <span class="separator"></span>
                 <span>${movie.Runtime !== 'N/A' ? movie.Runtime : 'Unknown'}</span>
+                <span class="separator"></span>
+                <span>${movie.Rated !== 'N/A' ? movie.Rated : 'NR'}</span>
             </div>
+            <div class="movie-genre">${movie.Genre !== 'N/A' ? movie.Genre : 'Genre unknown'}</div>
+            <p class="movie-plot">${movie.Plot !== 'N/A' ? movie.Plot : 'No plot available.'}</p>
+            
+            <div class="movie-crew">
+                <div class="crew-item"><strong>Director:</strong> ${movie.Director}</div>
+                <div class="crew-item"><strong>Starring:</strong> ${movie.Actors}</div>
+                ${movie.BoxOffice && movie.BoxOffice !== 'N/A' ? `<div class="crew-item"><strong>Box Office:</strong> ${movie.BoxOffice}</div>` : ''}
+            </div>
+
             ${sourcesHtml}
         </div>
     `;
